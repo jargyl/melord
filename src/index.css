@@ -1,0 +1,215 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "IntegralCF";
+  src: url("/fonts/IntegralCF-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IntegralCF";
+  src: url("/fonts/IntegralCF-DemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IntegralCF";
+  src: url("/fonts/IntegralCF-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: unset;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+img,
+picture,
+svg,
+canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* base */
+:root {
+  /* Colors */
+  --bg-color: #16161a;
+  --primary-color: #efefef;
+  --secondary-color: #ababab;
+  --tertiary-color: #3c3c41;
+  /* Gradients */
+  --main-gradient: linear-gradient(to right, #bc0101 0%, #620101 100%);
+  --secondary-gradient: linear-gradient(to right, #0c0c0e 0%, #151516 100%);
+  /* Fonts */
+  --main-font: "IntegralCF", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  /* Spacing */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-36: 36px;
+  --space-40: 40px;
+  --space-44: 44px;
+  /* Border Radius */
+  --border-radius-small: 15px;
+  --border-radius-big: 25px;
+}
+
+/* Mobile styles (default) */
+body {
+  background-color: var(--bg-color);
+  font-family: var(--main-font);
+  line-height: 1;
+  color: var(--primary-color);
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+p {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+}
+
+.gradient-text {
+  background-image: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.subtext {
+  font-family: var(--primary-font);
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--border-radius-big);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-image: var(--main-gradient);
+  font-family: var(--main-font);
+  font-weight: bold;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.btn-secondary {
+  background-color: var(--tertiary-color);
+  font-family: var(--secondary-font);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.subtitle-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  border-radius: var(--border-radius-big);
+  padding: 0px 12px;
+  color: var(--secondary-color);
+  width: fit-content;
+}
+
+.subtitle-container .icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: var(--space-28);
+  }
+
+  h2 {
+    font-size: 0.875rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .subtext {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    padding: 12px 28px;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+  }
+
+  .btn-secondary {
+    font-size: 0.75rem;
+  }
+
+  .subtitle-container {
+    padding: 0px 32px;
+  }
+
+  .subtitle-container .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+}

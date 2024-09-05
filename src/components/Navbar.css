@@ -1,0 +1,85 @@
+/* Base styles (mobile-first) */
+.navbar {
+  background-color: var(--bg-color);
+  padding: var(--space-16);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo .logo {
+  margin-left: -10px;
+  height: 32px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin-left: var(--space-8);
+}
+
+.navbar-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbar-link:hover {
+  color: var(--secondary-color);
+}
+
+.menu-icon {
+  display: flex;
+  cursor: pointer;
+  min-width: 24px;
+}
+
+.menu-icon svg {
+  color: var(--primary-color);
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.navbar-menu li:not(:nth-last-child(-n + 2)) {
+  display: none;
+}
+
+.btn {
+  white-space: nowrap;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: var(--space-24);
+  }
+
+  .navbar-logo .logo {
+    height: 40px;
+  }
+
+  .navbar-menu li {
+    margin-left: var(--space-24);
+  }
+
+  .navbar-menu li:not(:nth-last-child(-n + 2)) {
+    display: block;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
