@@ -1,4 +1,5 @@
 import { Hero } from "./components/Hero";
+import Licensing from "./components/Licensing";
 import Navbar from "./components/Navbar";
 import { Store } from "./components/Store";
 import YouTube from "/src/assets/youtube.svg";
@@ -35,6 +36,7 @@ function App() {
       <Navbar />
       <Hero />
       <Store />
+      <Licensing />
     </div>
   );
 }
