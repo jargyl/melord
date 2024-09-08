@@ -4,6 +4,33 @@ import Checklist from "../assets/licensing/checklist.svg";
 import { LicensingCard } from "./LicensingCard";
 
 const Licensing = () => {
+  const licenses = [
+    {
+      title: "Non-Profit (mp3)",
+      price: "24.95",
+      features: [
+        "Non-commercial use only",
+        "No distribution allowed",
+        "No online streaming",
+        "No music video rights",
+        "Non-profit performances only",
+      ],
+      deal: "Buy 1 track, get 2 free",
+    },
+    {
+      title: "Commercial (WAV)",
+      price: "49.95",
+      features: [
+        "Commercial use allowed",
+        "Limited distribution",
+        "Online streaming allowed",
+        "Music video rights included",
+        "Unlimited performances",
+      ],
+      // No deal for this license
+    },
+  ];
+
   return (
     <div className="licensing">
       <div className="subtitle-wrapper">
@@ -15,7 +42,11 @@ const Licensing = () => {
       <h1>
         Licensing <span className="gradient-text">Info</span>
       </h1>
-      <LicensingCard />
+      <div className="licensing-cards">
+        {licenses.map((license, index) => (
+          <LicensingCard key={index} {...license} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,12 +1,26 @@
-.card {
-  height: 432px;
+.licensing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  position: relative;
   width: 284px;
-  margin-top: var(--space-24);
+  height: 488px;
+  padding-bottom: 36px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
   padding: var(--space-32);
   background-color: #01050c;
   border-radius: var(--border-radius-big);
   text-align: start;
-  z-index: 99;
+  position: relative;
+  z-index: 2;
 }
 
 .title {
@@ -20,6 +34,8 @@
 
 .feature-list {
   margin-top: 22px;
+  overflow-y: auto;
+  max-height: 200px;
 }
 
 .feature {
@@ -32,24 +48,25 @@
 }
 
 .undercard {
-  z-index: 1;
-  margin-top: -20px;
-  width: 284px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 56px;
   border-radius: 0 0 var(--border-radius-big) var(--border-radius-big);
   background-color: #0c0e14;
   display: flex;
+  z-index: 1;
 }
 
 .undercard-content {
   width: 100%;
-  text-align: start;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
   font-size: var(--space-12);
+  padding-top: 20px;
 }
 
 .deal {
