@@ -98,7 +98,8 @@ a {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 16px;
+  font-weight: normal;
+  margin: var(--space-8) 0 0 0;
 }
 
 h2 {
@@ -125,6 +126,13 @@ p {
   font-family: var(--primary-font);
   font-size: 0.75rem;
   color: var(--secondary-color);
+  letter-spacing: 1px;
+  line-height: 1.2;
+  max-width: 360px;
+}
+
+iframe {
+  border: none;
 }
 
 /* Buttons */
@@ -163,8 +171,8 @@ p {
 }
 
 .subtitle-container .icon {
-  width: 10px;
-  height: 10px;
+  height: 0.9rem;
+  width: auto;
   margin-right: 6px;
 }
 
@@ -176,7 +184,7 @@ p {
 
   h1 {
     font-size: 4rem;
-    margin-bottom: var(--space-28);
+    margin: var(--space-16) 0 var(--space-12) 0;
   }
 
   h2 {
@@ -189,6 +197,7 @@ p {
 
   .subtext {
     font-size: 0.875rem;
+    max-width: 650px;
   }
 
   .btn {
@@ -208,8 +217,6 @@ p {
   }
 
   .subtitle-container .icon {
-    width: 24px;
-    height: 24px;
     margin-right: 10px;
   }
 }
