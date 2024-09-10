@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "./licensing.css";
 import Checklist from "../assets/licensing/checklist.svg";
 import { LicensingCard } from "./LicensingCard";
+import LicensePopup from "./LicensePopup";
 
 const licenses = [
   {
@@ -44,7 +45,6 @@ const licenses = [
       "For-profit performances",
       "Unlimited radio broadcast",
     ],
-    // No deal mentioned for this tier
   },
   {
     title: "UNLIMITED (STEMS)",
@@ -57,12 +57,13 @@ const licenses = [
       "For-profit performances",
       "Unlimited radio broadcast",
     ],
-    // No deal mentioned for this tier
   },
 ];
 
 const Licensing = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [selectedLicense, setSelectedLicense] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -74,6 +75,16 @@ const Licensing = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const openPopup = (license) => {
+    setSelectedLicense(license);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    setSelectedLicense(null);
+  };
+
   const renderLicenseCards = useMemo(
     () =>
       licenses.map((license, index) => (
@@ -81,6 +92,7 @@ const Licensing = () => {
           key={license.title}
           {...license}
           isHighlighted={index === 2}
+          onReadLicense={() => openPopup(license)}
         />
       )),
     []
@@ -117,6 +129,14 @@ const Licensing = () => {
         </Swiper>
       ) : (
         <div className="licensing-cards">{renderLicenseCards}</div>
+      )}
+      {selectedLicense && (
+        <LicensePopup
+          isOpen={isPopupOpen}
+          onClose={closePopup}
+          price={selectedLicense.price}
+          title={selectedLicense.title}
+        />
       )}
     </div>
   );

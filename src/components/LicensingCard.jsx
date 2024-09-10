@@ -9,6 +9,7 @@ export const LicensingCard = ({
   features,
   deal,
   isHighlighted,
+  onReadLicense,
 }) => {
   return (
     <div className={`card-container ${isHighlighted ? "highlighted" : ""}`}>
@@ -16,7 +17,9 @@ export const LicensingCard = ({
         <div className="card">
           <div className="title gradient-text">{title}</div>
           <div className="price">${price}</div>
-          <button className="btn btn-secondary">Read full license</button>
+          <button className="btn btn-secondary" onClick={onReadLicense}>
+            Read full license
+          </button>
           <div className="feature-list">
             {features.map((feature, index) => (
               <div key={index} className="feature">
