@@ -9,7 +9,19 @@
   position: relative;
   width: 284px;
   height: 488px;
-  padding-bottom: 36px;
+  margin-top: 15px;
+}
+
+.card-wrapper {
+  position: relative;
+  height: calc(100% - 36px);
+  padding: 2px;
+  border-radius: var(--border-radius-big);
+  background-color: #01050c;
+}
+
+.card-container.highlighted .card-wrapper {
+  background-image: var(--main-gradient);
 }
 
 .card {
@@ -17,10 +29,28 @@
   width: 100%;
   padding: var(--space-32);
   background-color: #01050c;
-  border-radius: var(--border-radius-big);
+  border-radius: calc(var(--border-radius-big) - 2px);
   text-align: start;
   position: relative;
   z-index: 2;
+}
+
+.card-container.highlighted::before {
+  content: "POPULAR";
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: var(--main-gradient);
+  color: white;
+  padding: 5px 25px;
+  border-radius: 15px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.card-container.highlighted button {
+  background-image: var(--main-gradient);
 }
 
 .title {
