@@ -15,13 +15,13 @@
 .card-wrapper {
   position: relative;
   height: calc(100% - 36px);
-  padding: 2px;
   border-radius: var(--border-radius-big);
-  background-color: #01050c;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-container.highlighted .card-wrapper {
   background-image: var(--main-gradient);
+  padding: 3px;
 }
 
 .card {
@@ -55,10 +55,11 @@
 
 .title {
   font-size: 1rem;
+  padding-bottom: 4px;
 }
 
 .price {
-  margin: 27px 0 var(--space-32) 0;
+  margin: 23px 0 var(--space-32) 0;
   font-size: 2.75rem;
 }
 

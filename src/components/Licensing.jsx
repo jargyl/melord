@@ -101,7 +101,9 @@ const Licensing = () => {
         <Swiper
           modules={[Pagination]}
           spaceBetween={20}
-          slidesPerView={1}
+          slidesPerView={1.3}
+          centeredSlides={true}
+          cssMode={true}
           pagination={{ clickable: true }}
           className="licensing-swiper"
         >

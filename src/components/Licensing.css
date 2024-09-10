@@ -20,18 +20,6 @@
   width: 100%;
 }
 
-.licensing-swiper {
-  width: 100%;
-  max-width: 350px;
-  margin-top: var(--space-32);
-}
-
-.swiper-slide-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 768px) {
   .licensing-swiper {
     display: none;
@@ -42,6 +30,16 @@
   .licensing-cards {
     display: none;
   }
+}
+
+.licensing-swiper {
+  width: 100%;
+}
+
+.swiper-slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-pagination-bullet {
