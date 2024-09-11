@@ -68,7 +68,7 @@
     opacity: 1;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 656px) {
   .popup-content {
     max-width: 95%;
     max-height: 70%;
