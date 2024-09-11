@@ -1,8 +1,9 @@
+import { AudioGallery } from "./components/AudioGallery";
 import { Hero } from "./components/Hero";
 import Licensing from "./components/Licensing";
 import Navbar from "./components/Navbar";
 import { Store } from "./components/Store";
-import YouTube from "/src/assets/youtube.svg";
+import YouTube from "/src/assets/audio-gallery/youtube.svg";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <Hero />
       <Store />
       <Licensing />
+      <AudioGallery />
     </div>
   );
 }
