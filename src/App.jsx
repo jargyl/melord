@@ -1,4 +1,5 @@
 import { AudioGallery } from "./components/AudioGallery";
+import { Contact } from "./components/Contact";
 import { Hero } from "./components/Hero";
 import Licensing from "./components/Licensing";
 import Navbar from "./components/Navbar";
@@ -39,6 +40,7 @@ function App() {
       <Store />
       <Licensing />
       <AudioGallery />
+      <Contact />
     </div>
   );
 }

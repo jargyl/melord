@@ -1,0 +1,128 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 var(--space-8);
+  min-height: 68vh;
+}
+
+.mail {
+  width: 541px;
+  height: 345px;
+  text-align: start;
+  background-color: #01050c;
+  border-radius: var(--border-radius-big);
+  padding: 36px 44px;
+}
+
+.form-container {
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
+}
+
+.mail label {
+  margin-bottom: 8px;
+}
+
+.mail input {
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.mail textarea {
+  width: 100%;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.socials {
+  height: 345px;
+  background-color: #01050c;
+  border-radius: var(--border-radius-big);
+  padding: 36px 44px;
+}
+
+.socials h2 {
+  color: white;
+  padding-bottom: 2px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.social-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h3 {
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+}
+
+a img {
+  height: 16px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  background-color: #01050c; /* Dark background for the entire tab bar */
+  border-radius: 20px; /* Rounded corners for the tab bar */
+  padding: 4px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs button {
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 16px; /* Rounded corners for individual tabs */
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active {
+  background-color: var(
+    --tertiary-color
+  ); /* Lighter background for active tab */
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  a img {
+    height: 12px;
+  }
+
+  .form-container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .mail {
+    width: 90vw;
+  }
+
+  .socials {
+    width: 100%;
+  }
+}

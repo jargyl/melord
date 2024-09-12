@@ -54,11 +54,6 @@
     background: var(--secondary-gradient);
   }
 
-  .icon {
-    height: 0.9rem;
-    width: auto;
-  }
-
   .payment-options {
     margin: 20px;
     gap: 16px;

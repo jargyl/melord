@@ -136,6 +136,24 @@ iframe {
   border: none;
 }
 
+label {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  display: block;
+}
+
+input,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--secondary-font);
+}
+
 /* Buttons */
 .btn {
   border: none;
