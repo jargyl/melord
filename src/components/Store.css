@@ -26,7 +26,6 @@
   gap: 12px;
 }
 
-/* Desktop styles */
 @media screen and (min-width: 1024px) {
   #shop {
     margin-top: var(--space-44);

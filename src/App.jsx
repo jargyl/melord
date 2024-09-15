@@ -11,10 +11,18 @@ function App() {
     <div className="container">
       <Navbar />
       <Hero />
-      <Store />
-      <Licensing />
-      <AudioGallery />
-      <Contact />
+      <div id="tracks">
+        <Store />
+      </div>
+      <div id="license">
+        <Licensing />
+      </div>
+      <div id="videos">
+        <AudioGallery />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

@@ -75,7 +75,12 @@ a div {
 }
 
 .navItem {
+  transition: color 0.3s ease;
   color: #d9d9d9;
+}
+
+.navItem:hover {
+  color: white;
 }
 
 .row-right {

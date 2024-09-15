@@ -62,7 +62,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  width: 344px; /* Match the width of the active slide */
+  width: 344px;
   background-color: #01050c;
   border-radius: 20px;
   padding: 5px 5px 8px 5px;

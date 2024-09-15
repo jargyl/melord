@@ -18,13 +18,35 @@ export const Hero = () => {
         vision
       </h1>
       <div className="logo-container">
-        <img src={Beatstars} alt="Beatstars" className="logo logo-beatstars" />
-        <img
-          src={Soundcloud}
-          alt="Soundcloud"
-          className="logo logo-soundcloud"
-        />
-        <img src={Spotify} alt="Spotify" className="logo logo-spotify" />
+        <a
+          href="https://www.beatstars.com/prodbymelord"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={Beatstars}
+            alt="Beatstars"
+            className="logo logo-beatstars"
+          />
+        </a>
+        <a
+          href="https://soundcloud.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={Soundcloud}
+            alt="Soundcloud"
+            className="logo logo-soundcloud"
+          />
+        </a>
+        <a
+          href="https://open.spotify.com/artist/0URUQY8sVBLUoDtPDaKZIG"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Spotify} alt="Spotify" className="logo logo-spotify" />
+        </a>
       </div>
     </div>
   );

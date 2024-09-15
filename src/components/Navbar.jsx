@@ -8,10 +8,10 @@ import Instagram from "../assets/navbar/instagram.svg";
 import Discord from "../assets/navbar/discord.svg";
 
 const menuItems = [
-  { label: "TRACKS", href: "#" },
-  { label: "LICENSE", href: "#" },
-  { label: "VIDEOS", href: "#" },
-  { label: "CONTACT", href: "#" },
+  { label: "TRACKS", href: "#tracks" },
+  { label: "LICENSE", href: "#license" },
+  { label: "VIDEOS", href: "#videos" },
+  { label: "CONTACT", href: "#contact" },
 ];
 
 const socialIcons = [
@@ -20,11 +20,11 @@ const socialIcons = [
   { name: "Discord", icon: Discord, href: "#" },
 ];
 
-const NavbarLinks = ({ className }) => (
+const NavbarLinks = ({ className, onClick }) => (
   <>
     {menuItems.map((item, index) => (
       <li key={index}>
-        <a href={item.href} className={className}>
+        <a href={item.href} className={className} onClick={onClick}>
           {item.label}
         </a>
       </li>
@@ -39,6 +39,10 @@ const Navbar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsSidebarOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -46,9 +50,13 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" className="logo" />
         </div>
         <ul className="navbar-menu">
-          <NavbarLinks className="navbar-link" />
+          <NavbarLinks className="navbar-link" onClick={handleLinkClick} />
           <li>
-            <a href="#" className="btn btn-primary">
+            <a
+              href="#tracks"
+              className="btn btn-primary"
+              onClick={handleLinkClick}
+            >
               SHOP
             </a>
           </li>
@@ -66,7 +74,16 @@ const Navbar = () => {
         </div>
         <div className="sidebar-content">
           <ul className="sidebar-menu">
-            <NavbarLinks className="sidebar-link" />
+            <NavbarLinks className="sidebar-link" onClick={handleLinkClick} />
+            <li>
+              <a
+                href="#tracks"
+                className="sidebar-link"
+                onClick={handleLinkClick}
+              >
+                SHOP
+              </a>
+            </li>
           </ul>
           <div className="social-icons">
             {socialIcons.map((icon, index) => (

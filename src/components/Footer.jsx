@@ -18,38 +18,68 @@ export const Footer = () => {
             <div className="quote">"Knowing yourself is the first step"</div>
           </div>
           <div>
-            <a href="mailto:john.doe@gmail.com" className="flex email">
+            <a href="mailto:prodbymelord@gmail.com" className="flex email">
               <img src={Mail} alt="mail" className="icon" />
-              <div>john.doe@gmail.com</div>
+              <div>prodbymelord@gmail.com</div>
             </a>
             <div className="flex">
-              <img src={Beatstars} alt="beatstars" className="icon" />
-              <img src={YouTube} alt="youtube" className="icon" />
-              <img src={Spotify} alt="spotify" className="icon" />
-              <img src={Instagram} alt="instagram" className="icon" />
-              <img src={Discord} alt="discord" className="icon" />
+              <a
+                href="https://www.beatstars.com/prodbymelord"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Beatstars} alt="beatstars" className="icon" />
+              </a>
+              <a
+                href="https://www.youtube.com/@melordbeats"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={YouTube} alt="youtube" className="icon" />
+              </a>
+              <a
+                href="https://open.spotify.com/artist/0URUQY8sVBLUoDtPDaKZIG"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Spotify} alt="spotify" className="icon" />
+              </a>
+              <a
+                href="https://www.instagram.com/melord.be"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Instagram} alt="instagram" className="icon" />
+              </a>
+              <a
+                href="https://discordapp.com/users/1138205437292978236"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Discord} alt="discord" className="icon" />
+              </a>
             </div>
           </div>
         </div>
         <div className="row-center">
-          <a href="" className="navItem">
+          <a href="#tracks" className="navItem">
             Shop Beats
           </a>
-          <a href="" className="navItem">
+          <a href="#license" className="navItem">
             Usage Rights
           </a>
-          <a href="" className="navItem">
+          <a href="#videos" className="navItem">
             YouTube
           </a>
-          <a href="" className="navItem">
+          <a href="#contact" className="navItem">
             Contact
           </a>
         </div>
         <div className="row-right">
           <div className="tof">Terms of Use • Privacy Policy</div>
-          <div className="copyright">© 2024 MELORD. All rights reserved.</div>
+          <div className="copyright">© 2024 MELORD. All rights reserved.</div>
           <div>
-            Designed and developed by <span>Jari Gielen</span>
+            Designed and developed by <span>Jari Gielen</span>
           </div>
         </div>
       </div>

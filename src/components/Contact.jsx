@@ -15,7 +15,7 @@ export const Contact = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Adjust this value as needed
+      setIsMobile(window.innerWidth < 768);
     };
 
     handleResize();
@@ -25,7 +25,7 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:john@gmail.com?subject=Contact from ${name}&body=${message}`;
+    const mailtoLink = `mailto:prodbymelord@gmail.com?subject=Contact from ${name}&body=${message}`;
     window.location.href = mailtoLink;
   };
 
@@ -91,23 +91,48 @@ export const Contact = () => {
           <div className="socials">
             <h3 className="gradient-text">Socials</h3>
             <div className="social-link-container">
-              <a href="" className="social-link">
+              <a
+                href="https://www.beatstars.com/prodbymelord"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
                 <img src={Beatstars} alt="beatstars" className="icon" />
                 <h2>Beatstars</h2>
               </a>
-              <a href="" className="social-link">
+              <a
+                href="https://www.youtube.com/@melordbeats"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
                 <img src={YouTube} alt="youtube" className="icon" />
                 <h2>YouTube</h2>
               </a>
-              <a href="" className="social-link">
+              <a
+                href="https://open.spotify.com/artist/0URUQY8sVBLUoDtPDaKZIG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
                 <img src={Spotify} alt="spotify" className="icon" />
                 <h2>Spotify</h2>
               </a>
-              <a href="" className="social-link">
-                <img src={Instagram} alt="instagam" className="icon" />
+              <a
+                href="https://www.instagram.com/melord.be"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img src={Instagram} alt="instagram" className="icon" />
                 <h2>Instagram</h2>
               </a>
-              <a href="" className="social-link">
+              <a
+                href="https://discordapp.com/users/1138205437292978236"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
                 <img src={Discord} alt="discord" className="icon" />
                 <h2>Discord</h2>
               </a>

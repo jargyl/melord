@@ -80,8 +80,8 @@ h3 {
   display: flex;
   margin-top: 24px;
   margin-bottom: 12px;
-  background-color: #01050c; /* Dark background for the entire tab bar */
-  border-radius: 20px; /* Rounded corners for the tab bar */
+  background-color: #01050c;
+  border-radius: 20px;
   padding: 4px;
   width: fit-content;
   margin-left: auto;
@@ -95,14 +95,12 @@ h3 {
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
-  border-radius: 16px; /* Rounded corners for individual tabs */
+  border-radius: 16px;
   transition: background-color 0.3s ease;
 }
 
 .tabs button.active {
-  background-color: var(
-    --tertiary-color
-  ); /* Lighter background for active tab */
+  background-color: var(--tertiary-color);
   color: #ffffff;
 }
 

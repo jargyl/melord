@@ -51,7 +51,6 @@
   align-items: center;
 }
 
-/* Desktop styles */
 @media screen and (min-width: 1024px) {
   .licensing-cards {
     display: grid;
