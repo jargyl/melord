@@ -19,7 +19,7 @@
 }
 
 .form-container {
-  margin-top: 32px;
+  margin-top: var(--space-24);
   display: flex;
   gap: 20px;
 }

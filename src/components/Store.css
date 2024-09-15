@@ -10,7 +10,7 @@
 }
 
 #shop {
-  margin-top: var(--space-20);
+  margin-top: var(--space-24);
   width: 95vw;
   height: 70vh;
 }
@@ -29,7 +29,7 @@
 /* Desktop styles */
 @media screen and (min-width: 1024px) {
   #shop {
-    margin-top: var(--space-32);
+    margin-top: var(--space-44);
     width: 45vw;
     height: 62vh;
   }

@@ -13,7 +13,8 @@
 .hero-title {
   font-size: 2.5rem;
   font-weight: 600;
-  margin-top: var(--space-4);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-12);
   max-width: 380px;
   width: 100%;
 }
@@ -46,7 +47,7 @@
 @media screen and (min-width: 1024px) {
   .hero {
     height: 100vh;
-    margin-top: -80px;
+    margin-top: -5rem;
   }
 
   .hero-title {

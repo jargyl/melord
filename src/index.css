@@ -99,7 +99,7 @@ a {
 h1 {
   font-size: 2rem;
   font-weight: normal;
-  margin: var(--space-8) 0 0 0;
+  margin: var(--space-8) 0 var(--space-12) 0;
 }
 
 h2 {
@@ -207,7 +207,7 @@ textarea::placeholder {
 
   h1 {
     font-size: 4rem;
-    margin: var(--space-16) 0 var(--space-12) 0;
+    margin: var(--space-12) 0 var(--space-24) 0;
   }
 
   h2 {
