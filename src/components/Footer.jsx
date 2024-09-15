@@ -18,9 +18,9 @@ export const Footer = () => {
             <div className="quote">"Knowing yourself is the first step"</div>
           </div>
           <div>
-            <a href="mailto:melordbeats@gmail.com" className="flex email">
+            <a href="mailto:melordbeats@outlook.com" className="flex email">
               <img src={Mail} alt="mail" className="icon" />
-              <div>melordbeats@gmail.com</div>
+              <div>melordbeats@outlook.com</div>
             </a>
             <div className="flex">
               <a
