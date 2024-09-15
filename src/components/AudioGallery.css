@@ -6,7 +6,7 @@
   text-align: center;
   width: 100%;
   padding: 0 var(--space-8);
-  min-height: 68vh;
+  min-height: 85vh;
 }
 .carousel-container {
   position: relative;

@@ -1,6 +1,5 @@
 .footer {
   background-color: rgba(1, 5, 12, 0.5);
-  width: 100vw;
   height: 408px;
   box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: flex;
@@ -72,7 +71,7 @@ a div {
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  gap: 16px;
+  gap: 8px;
 }
 
 .navItem {
@@ -111,6 +110,7 @@ a div {
 
   .row-center {
     justify-content: end;
+    gap: 16px;
   }
 
   .content {

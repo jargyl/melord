@@ -6,7 +6,7 @@
   text-align: center;
   width: 100%;
   padding: 0 var(--space-8);
-  min-height: 68vh;
+  min-height: 95vh;
 }
 
 .mail {
@@ -72,9 +72,7 @@ h3 {
   align-items: center;
 }
 
-a img {
-  height: 16px;
-  width: auto;
+.social-link .icon {
   margin-right: 10px;
 }
 

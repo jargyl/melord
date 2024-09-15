@@ -6,7 +6,8 @@
   text-align: center;
   width: 100%;
   padding: 0 var(--space-8);
-  min-height: 68vh;
+  min-height: 80vh;
+  margin-top: -40px;
 }
 
 .hero-title {
@@ -44,7 +45,8 @@
 
 @media screen and (min-width: 1024px) {
   .hero {
-    min-height: 76vh;
+    height: 100vh;
+    margin-top: -80px;
   }
 
   .hero-title {
