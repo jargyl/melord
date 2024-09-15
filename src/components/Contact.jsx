@@ -25,7 +25,7 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:prodbymelord@gmail.com?subject=Contact from ${name}&body=${message}`;
+    const mailtoLink = `mailto:melordbeats@gmail.com?subject=Contact from ${name}&body=${message}`;
     window.location.href = mailtoLink;
   };
 
